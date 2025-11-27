@@ -11,3 +11,5 @@ Dashboard finanziaria interattiva con elementi di Machine Learning ( Regressione
 
 ### Dashboard Principale
 La dashboard principale offre una visione completa delle metriche finanziarie chiave:
+
+![Main Dashboard](images/Cattura1.PNG)
