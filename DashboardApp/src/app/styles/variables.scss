@@ -1,0 +1,14 @@
+:root {
+  --backround-color: rgb(51, 66, 86);
+  --background-color-light: #{lighten(rgb(51, 66, 86), 20%)};
+  --main-text-color: white;
+  --hovering-text-color: grey;
+  --active-text-color: black;
+
+  --table-header-bg: rgb(61, 76, 96);
+  --table-border: rgba(255, 255, 255, 0.1);
+  --table-row-hover: rgba(255, 255, 255, 0.05);
+  --profit-positive: #22c55e;
+  --profit-negative: #ef4444;
+  --secondary-text: rgba(255, 255, 255, 0.6);
+}

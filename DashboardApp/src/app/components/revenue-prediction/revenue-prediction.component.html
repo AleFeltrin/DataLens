@@ -1,0 +1,16 @@
+<div class="wrapper column">
+  <div class="chart-header row align-center space-between">
+    <h2 class="chart-title">Revenue and Predictions</h2>
+    <p-button
+      class="prediction-toggle-btn"
+      [label]="showPrediction() ? 'Hide Prediction' : 'Show Predicted Revenue for Next Year'"
+      [outlined]="true"
+      severity="secondary"
+      size="small"
+      (onClick)="showPrediction.set(!showPrediction())"
+    >
+    </p-button>
+  </div>
+
+  <p-chart [type]="chartType" [data]="chartData()" [options]="chartOptions"></p-chart>
+</div>

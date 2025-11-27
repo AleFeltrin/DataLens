@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-header {
+  display: flex;
+  padding: 1rem 2.5rem 0 1rem;
+}
+
+.prediction-toggle-btn {
+  color: var(--main-text-color);
+  border-color: var(--main-text-color);
+  background-color: transparent;
+}
+
+.chart-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--main-text-color);
+}
+
+:host ::ng-deep {
+  p-chart {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-grow: 1;
+      padding: 1rem 2rem;
+    }
+  }
+  canvas {
+    display: flex;
+    width: 100% !important;
+  }
+}

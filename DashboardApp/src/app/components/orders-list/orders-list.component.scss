@@ -1,0 +1,115 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.table-title {
+  margin: 0;
+  padding: 0rem 0rem 1rem 0rem;
+  font-size: 1.3rem;
+  color: var(--main-text-color);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  :host ::ng-deep {
+    p-table {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+    }
+    .p-datatable {
+      background-color: var(--background-color);
+      .p-datatable-header {
+        background-color: var(--background-color-light);
+        border: 1px solid var(--table-border);
+        color: var(--main-text-color);
+      }
+      .p-datatable-thead > tr > th {
+        background-color: var(--table-header-bg);
+        color: var(--main-text-color);
+        font-weight: 600;
+        padding: 1rem;
+        border-bottom: 2px solid var(--table-border);
+      }
+      .p-datatable-tbody > tr {
+        background-color: var(--background-color);
+        color: var(--main-text-color);
+        transition: background-color 0.2s ease;
+        &:hover {
+          background-color: var(--table-row-hover);
+        }
+        > td {
+          padding: 0.75rem 1rem;
+          border-bottom: 1px solid var(--table-border);
+        }
+      }
+      .p-sortable-column-icon {
+        color: var(--secondary-text);
+      }
+      .p-sortable-column:hover {
+        background-color: var(--table-row-hover);
+        color: var(--main-text-color);
+      }
+      .p-highlight {
+        background-color: var(--background-color-light);
+        color: var(--main-text-color);
+      }
+    }
+    .p-paginator {
+      background-color: var(--background-color);
+      border: 1px solid var(--table-border);
+      padding: 0.5rem;
+      color: var(--main-text-color);
+      .p-paginator-current {
+        color: var(--main-text-color);
+      }
+      .p-paginator-pages .p-paginator-page {
+        color: var(--main-text-color);
+        &:hover {
+          background-color: var(--table-row-hover);
+          color: var(--main-text-color);
+        }
+        &.p-highlight {
+          background-color: var(--background-color-light);
+          color: var(--main-text-color);
+        }
+      }
+      .p-paginator-first,
+      .p-paginator-prev,
+      .p-paginator-next,
+      .p-paginator-last {
+        color: var(--main-text-color);
+        &:hover:not(:disabled) {
+          background-color: var(--table-row-hover);
+          color: var(--main-text-color);
+        }
+      }
+      .p-dropdown {
+        background-color: var(--background-color);
+        border: 1px solid var(--table-border);
+        color: var(--main-text-color);
+        &:hover {
+          border-color: var(--background-color-light);
+        }
+      }
+    }
+  }
+}
+.profit-positive {
+  color: var(--profit-positive);
+  font-weight: 600;
+}
+.profit-negative {
+  color: var(--profit-negative);
+  font-weight: 600;
+}
+.text-center {
+  text-align: center;
+  color: var(--secondary-text);
+  padding: 2rem;
+}

@@ -1,0 +1,28 @@
+<div class="wrapper column">
+  <h2 class="table-title">Recent Orders</h2>
+  <p-table [value]="orders" [paginator]="true" [rows]="10" scrollable="true" [showCurrentPageReport]="true" styleClass="p-datatable-striped" scrollHeight="flex">
+    <ng-template pTemplate="header">
+      <tr>
+        <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon></th>
+        <th pSortableColumn="buyer">Buyer <p-sortIcon field="price"></p-sortIcon></th>
+        <th pSortableColumn="amount">Amount <p-sortIcon field="expense"></p-sortIcon></th>
+        <th pSortableColumn="count">Count <p-sortIcon field="count"></p-sortIcon></th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-order>
+      <tr>
+        <td>{{ order.id }}</td>
+        <td>{{ order.buyer }}</td>
+        <td>{{ order.amount | currency : "USD" : "symbol" : "1.2-2" }}</td>
+        <td>{{ order.count }}</td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="emptymessage">
+      <tr>
+        <td colspan="4" class="text-center">No orders found.</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
