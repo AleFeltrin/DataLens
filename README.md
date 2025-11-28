@@ -32,6 +32,6 @@ Visualizzazione delle previsioni future basate sul modello:
 
 ## Stack Tecnologico
 
-- **Angular 19+** - Framework moderno per webapp reattive
+- **Angular 19** - Framework moderno per webapp reattive
 - **TypeScript** - Linguaggio type-safe utilizzato per lo sviluppo della webapp
 - **Spring Boot** - Framework java per API RESTful
