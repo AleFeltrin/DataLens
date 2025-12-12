@@ -1,6 +1,12 @@
 # DataLens
 Dashboard finanziaria interattiva con elementi di Machine Learning per analisi predittive.
 
+## Stack Tecnologico
+
+- **Angular 19**: Framework moderno per webapp reattive
+- **TypeScript**: Linguaggio type-safe utilizzato per lo sviluppo della webapp
+- **Spring**: Framework java per API RESTful
+
 ## Caratteristiche Principali
 
 - **Analisi Predittiva**: Implementazione di regressione lineare per previsioni accurate dei ricavi futuri
@@ -29,9 +35,3 @@ Visualizzazione delle previsioni future basate sul modello:
 ![Future Predictions](images/Cattura3.PNG)
 
 *Previsioni revenue future (gialle) generate dal modello*
-
-## Stack Tecnologico
-
-- **Angular 19** - Framework moderno per webapp reattive
-- **TypeScript** - Linguaggio type-safe utilizzato per lo sviluppo della webapp
-- **Spring Boot** - Framework java per API RESTful
